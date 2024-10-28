@@ -57,3 +57,25 @@ city
 var a = ['a','b','c',1]
 var b = [1,2,3]
 a+b
+
+var a = "Hii"
+var b = ["hii"]
+
+Array.isArray(a)
+
+Array.isArray(b)
+
+var city = ['London',2,'Delhi',false,'NewYork',1,4,true,'Paris']
+
+var myarray = ['Amsterdam','Dubai',['BMW','Audi','Skoda'],'Edinberg','London','Mumbai']
+for(i=0;i<myarray.length;i++){
+    if(Array.isArray(myarray[i])){
+    for(j=0;j<myarray[i].length;j++){
+        console.log(myarray[i][j])
+    }
+}else{
+    console.log(myarray[i])
+}
+}
+
+Nested For Loop means outer loop run then the inner loop run.
